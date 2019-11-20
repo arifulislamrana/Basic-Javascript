@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning javascript</title>
+        <link rel="stylesheet" href="arif.css">
+        <script src="arif.js"></script>
+    </head>
+
+    <body id="body" onload="showdate()">
+        <div class="header">
+            <h1>Learning Javascript</h1>
+            <p>With Brad traversy</p>
+        </div>
+        <div class="container">
+            <button onclick="this.innerHTML='you clicked!'">click me1</button>
+        </div>
+        <div class="container">
+                <button onclick="doClick()">click me2</button>
+        </div>
+        <div class="container">
+               <button onclick="changeText(this)">click me3</button>
+        </div>
+        <div class="container">
+                <h1 id="lekha">Learning Javascript</h1>
+                <button onclick="change_Text()">click me4</button>
+         </div>
+         <div class="container">
+            <h1 id="time"></h1>
+            <button  onclick="showdate()">Show date</button>
+         </div>
+         
+         <div class="container">
+                <button onmouseout="cleardate()" onmouseover="showdate2()">Show date2</button>
+                <h1 id="Time"></h1>
+         </div>
+
+
+<form method="POST" action="#.php" name="myform">
+    <div>
+        <label for="">first name</label>
+        <input type="text" name="firstname" id="firstname">
+    </div>
+    <br>
+    <div>
+        <label for="">last name</label>
+        <input type="text" name="lastname" id="lastname">
+    </div>
+    <br>
+<div>
+    <label for="">background</label>
+    <select name="background" id="background" 
+    onchange="changebackground(this)">
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+        <option value="green">green</option>
+    </select>
+</div>
+<br>
+<input type="submit" value="submit">
+</form>
+
+<form method="POST" action="action.php" name="myform"
+onsubmit="return validateform()">
+<div class="login-box">
+<img src="logo.jpg" class="avatar" height="200px" width="200px">
+<h1>Login Here</h1>
+<form action="form1.html">
+<p>Username</p>
+<input type="text" name="username" 
+placeholder="Enter Username" id="name">
+<p>Password</p>
+<input type="password" name="password" placeholder="Enter Password">
+<input type="submit" name="submit" value="Login">
+<a href="">Forget Password</a>
+</form>
+</div>
+</form>
+
+    </body>
+</html>
